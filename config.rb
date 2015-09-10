@@ -29,11 +29,12 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
-activate :blog do |blog|
+activate :deploy do |deploy|
   deploy.method = :git
   deploy.branch = 'master'
   deploy.build_before = true
 end
+
 activate :directory_indexes
 
 page "/feed.xml", layout: false
