@@ -10,9 +10,8 @@
       fullscreen.hide()
       
       player.src += "&autoplay=1"
-      req = player.requestFullscreen || player.webkitRequestFullscreen || player.mozRequestFullScreen || player.msRequestFullscreen
-
-      req.call(player)
+      # req = player.requestFullscreen || player.webkitRequestFullscreen || player.mozRequestFullScreen || player.msRequestFullscreen
+      # req.call(player)
       player.playVideo()
       e.preventDefault()
 

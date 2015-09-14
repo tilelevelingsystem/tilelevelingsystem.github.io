@@ -168,15 +168,10 @@ activate :google_analytics do |ga|
   ga.tracking_id = 'UA-67559707-1'
 end
 
-###
-# Deploy settings
-###
-
-# ftp deployment configuration.
-# activate :deploy do |deploy|
-#   deploy.method = :ftp
-#   deploy.host = "ftp-host"
-#   deploy.user = "ftp-user"
-#   deploy.password = "ftp-password"
-#   deploy.path = "ftp-path"
-# end
+# Deploy
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.branch = 'master'
+  deploy.build_before = true
+end
+activate :directory_indexes
