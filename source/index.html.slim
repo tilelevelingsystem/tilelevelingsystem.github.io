@@ -1,0 +1,128 @@
+- product_name = 'Connection Tile'
+
+| <!doctype html> 
+html
+  head
+    meta[charset="utf-8"]
+    meta[http-equiv="X-UA-Compatible" content="IE=edge;chrome=1"]
+    title
+      = page_title
+    meta[name="description" content="#{page_description}"]
+    = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
+    /[if lt IE 9]
+      = javascript_include_tag "ie8"
+    = stylesheet_link_tag "all"
+    = javascript_include_tag "all"
+    = google_analytics_tag
+  body
+    .landing
+      .landing__head
+        = image_tag 'landing/logo.png'
+        #brand 
+          = product_name
+
+        .head-line.white
+          ' เครื่องมือที่ทำให้
+          br
+          ' งานปูกระเบื้องออกมาอย่างมืออาชีพ
+
+        #player-frame style="display:none"
+          iframe#player width="560" height="315" src="https://www.youtube.com/embed/ifXXPA_zFzQ?rel=0" frameborder="0" allowfullscreen
+        a#play-fullscreen href="#"
+          = image_tag 'landing/play_video.png'
+
+        = image_tag 'landing/arrow_down.png', id: 'arrow-down'
+
+      .landing__problem
+        .head-line.black
+          ' ปัญหาการปูกระเบื้อง
+        .container
+          .row
+            .col-sm-6
+              = image_tag 'landing/one_mm.png', class: 'img-responsive center-block'
+            .col-sm-6
+              .sub-head-line
+                ' 1 มิลลเมตร 
+                br
+                ' สร้างประสบการณ์ไม่ดีได้
+              .desc
+                ' กระเบื้องที่ปูแล้วมีระดับไม่เท่ากันเพียง 1 มิลลิเมตร สร้างประสบการณ์ไม่ดีให้แก่ลูกค้าของคุณ
+          .row
+            .col-sm-5
+              .sub-head-line
+                ' ช่างปูกระเบื้องต้องมีความชำนาญ
+              .desc
+                ' การปูกระเบื้องให้ดี ต้องอาศัยผู้รับเหมาที่มีประสบการณ์ กระเบื้องทุกแผ่นที่ปูจึงจะมีระดับที่เท่ากัน
+            .col-sm-7
+              = image_tag 'landing/tile_broken.jpg', class: 'img-responsive center-block'
+      
+      .landing__solve
+        = image_tag 'landing/logo.png'
+        #brand
+          = product_name
+
+        .head-line.white
+          ' #{product_name} แก้ปัญหาการปูกระเบื้อง
+          br
+          ' เสมือนปูโดยช่างมืออาชีพ
+
+      .landing__tool
+        .head-line.black
+          ' ชุดเครื่องมือปรับระดับ
+        .desc
+          ' Conntection Tile ประกอบด้วยตัวยึด และตัวลิ่ม ที่จะช่วยยึดกระเบื้องที่อยู่ติดกันให้มีระดับเดียวกัน
+        .container
+          .row
+            .col-sm-6
+              = image_tag 'landing/tool_1.jpg', class: 'img-responsive center-block'
+            .col-sm-6
+              = image_tag 'landing/tool_2.jpg', class: 'img-responsive center-block'
+
+      .landing__result
+        .head-line.black
+          ' ผลลัพธ์กระเบื้องทุกแผ่นมีระดับเดียวกัน
+        .desc
+          ' กระเบื้องทุกแผ่นจะถูกปรับระดับ โดยเครื่องมือ #{product_name} จึงทำให้ คุณไม่ต้องกังวลใจอีกต่อไป
+
+      .landing__benefit
+        .container
+          .row
+            .head-line.black
+              ' ลดค่าใช้จ่าย
+            .col-sm-10.col-sm-offset-1
+              .desc
+                ' ชุดปรับระดับพื้นกระเบื้องของ #{product_name} ช่วยลดค่าใช้จ่าย เพราะการกลับไปแก้งาน ต้องเสียค่าใช้จ่ายสูงกว่า จึงช่วยลดความเสี่ยง และควบคุมต้นทุน
+
+          .row
+            .head-line.black
+              ' ใช้งานง่าย แม้ปูโดยช่างมือใหม่
+            .col-sm-10.col-sm-offset-1
+              .desc
+                ' ช่างมือใหม่ก็สามารถปูกระเบื้องได้เนียบดั่งช่างมืออาชีพ เพียงทำตามขั้นตอนที่ #{product_name} จัดเตรียมไว้
+
+          .row
+            .head-line.black
+              ' สั่งซื้อ / สอบถาม
+            .col-sm-10.col-sm-offset-1
+              .desc
+                ' โทร. 089-123-2683
+                br
+                ' Line ID: one122683
+                br
+                ' Facebook Inbox: 
+                a href="https://www.facebook.com/tile.leveling.system/messages" ฝากข้อความ
+
+      br
+      br
+      .container
+        .row
+          .col-xs-12
+            br
+            .text-center
+              .fb-page data-adapt-container-width="true" data-hide-cover="false" data-href="https://www.facebook.com/tile.leveling.system" data-show-facepile="true" data-show-posts="false" data-small-header="false" 
+                .fb-xfbml-parse-ignore
+                  blockquote cite="https://www.facebook.com/tile.leveling.system" 
+                    a href="https://www.facebook.com/tile.leveling.system" ชุดปรับระดับพื้นกระเบื้อง
+
+        br
+        br

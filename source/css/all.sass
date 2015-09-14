@@ -1,0 +1,125 @@
+@charset 'utf-8'
+
+@import 'settings'
+@import 'imports'
+@import 'font'
+
+.navbar
+  &.navbar-fixed-top + *
+    margin-top: 80px !important
+
+// landing
+.landing
+  .head-line
+    @include center
+    font-family: ThaiSansNeue
+    font-size: 50px
+    font-weight: 500
+    &.white
+      color: #FFFFFF
+    &.back
+      color: #333
+
+  .sub-head-line
+    @include center
+    font-family: ThaiSansNeue
+    font-size: 33px
+    font-weight: 500
+    color: #333
+
+  .desc
+    font-family: boon
+    font-weight: 300
+    font-size: 27px
+    color: #333
+    
+  .landing__head
+    @include center
+    @include at2x('landing/selling_point_bg', 'jpg')
+    background-position: center
+    background-repeat: no-repeat
+    min-height: 500px
+    padding: 27px
+
+    #brand
+      font-family: Boon
+      font-weight: 300
+      font-size: 23px
+      color: #FFFFFF
+
+    .head-line
+      margin-top: 39px
+
+    #play-fullscreen
+      @include at2x('landing/youtube_thumbnail', 'png')
+      background-position: center
+      background-repeat: no-repeat
+      background-size: 169px auto !important
+      height: 110px
+      display: block
+      margin: 0 auto
+      img
+        @include center
+        height: 50px
+        width: 50px
+        margin-top: 25px
+
+    #arrow-down
+      margin-top: 41px
+
+  .landing__problem
+    margin-top: 40px
+    .row
+      margin-top: 18px
+      margin-bottom: 42px
+      .col-sm-6, .col-sm-5
+        margin-top: 18px
+        margin-bottom: 42px
+      img
+        @include center
+
+  .landing__solve
+    margin-top: 80px
+    @include center
+    @include at2x('landing/result_bg_1', 'png')
+    background-position: center
+    background-repeat: no-repeat
+    min-height: 400px
+    padding: 27px
+
+    img
+      margin-top: 25px
+
+    #brand
+      font-family: Boon
+      font-weight: 300
+      font-size: 23px
+      color: #FFFFFF
+
+    .head-line
+      margin-top: 23px
+
+  .landing__tool
+    margin-top: 57px
+    .desc
+      @include center
+    .row
+      margin-top: 37px
+      margin-bottom: 37px
+  
+  .landing__result
+    margin-top: 57px
+    @include at2x('landing/result_bg_2', 'png')
+    background-position: center
+    background-repeat: no-repeat
+    min-height: 303px
+    padding: 27px
+    .desc
+      @include center
+
+  .landing__benefit
+    .row
+      margin-top: 60px
+    .desc
+      @include center    
+

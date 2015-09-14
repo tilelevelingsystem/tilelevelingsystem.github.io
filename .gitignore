@@ -10,9 +10,15 @@
 # Ignore the build directory
 /build
 
-# Ignore cache
+# Ignore the bower components directory
+/bower_components
+
+# Ignore Sass' cache
 /.sass-cache
-/.cache
 
 # Ignore .DS_store file
 .DS_Store
+
+# Ignore Gemfile.lock
+/Gemfile.lock
+.gitconfig
