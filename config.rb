@@ -32,6 +32,7 @@ end
 page '/feed.xml', layout: false
 page '/sitemap.xml', layout: false
 page '/index.html', layout: false
+page '/sale_page.html', layout: false
 
 ###
 # Compass

@@ -1,0 +1,69 @@
+- product_name = 'Connection Tile'
+
+| <!doctype html> 
+html
+  head
+    meta[charset="utf-8"]
+    meta[http-equiv="X-UA-Compatible" content="IE=edge;chrome=1"]
+    title
+      = page_title
+    meta[name="description" content="#{page_description}"]
+    = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
+    /[if lt IE 9]
+      = javascript_include_tag "ie8"
+    = stylesheet_link_tag "all"
+    = javascript_include_tag "all"
+    = google_analytics_tag
+  body
+    .landing
+      .landing__solve style="margin-top: 0px"
+        = image_tag 'landing/logo.png'
+        #brand
+          = product_name
+        .head-line.white
+          ' #{product_name} แก้ปัญหาการปูกระเบื้อง
+          br
+          ' เสมือนปูโดยช่างมืออาชีพ
+
+      .container style="margin-top: 20px"
+        .row
+          .head-line.black
+            ' สั่งซื้อ / สอบถาม
+          .col-sm-10.col-sm-offset-1
+            .desc.text-center
+              ' โทร.
+              a href="tel:+66891232683" 089-123-2683
+              br
+              ' Line ID: one122683
+
+
+      .container
+        br
+        br
+        .row
+          .col-xs-12
+            .text-center
+              .fb-page data-adapt-container-width="true" data-hide-cover="false" data-href="https://www.facebook.com/tile.leveling.system" data-show-facepile="true" data-show-posts="false" data-small-header="false" 
+                .fb-xfbml-parse-ignore
+                  blockquote cite="https://www.facebook.com/tile.leveling.system" 
+                    a href="https://www.facebook.com/tile.leveling.system" ชุดปรับระดับพื้นกระเบื้อง
+
+        br
+        br
+
+/ Google Code for TLS Conversion Page
+script type="text/javascript"
+  /* <![CDATA[ */
+    var google_conversion_id = 978322911;
+    var google_conversion_language = "en";
+    var google_conversion_format = "3";
+    var google_conversion_color = "ffffff";
+    var google_conversion_label = "9owGCMjQ8F8Q34vA0gM";
+    var google_remarketing_only = false;
+  /* ]]> */
+
+script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"
+
+noscript
+  div style="display:inline;"
+    img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/978322911/?label=9owGCMjQ8F8Q34vA0gM&amp;guid=ON&amp;script=0"

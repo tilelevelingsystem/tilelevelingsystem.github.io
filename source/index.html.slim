@@ -60,7 +60,6 @@ html
         = image_tag 'landing/logo.png'
         #brand
           = product_name
-
         .head-line.white
           ' #{product_name} แก้ปัญหาการปูกระเบื้อง
           br
@@ -101,28 +100,15 @@ html
                 ' ช่างมือใหม่ก็สามารถปูกระเบื้องได้เนียบดั่งช่างมืออาชีพ เพียงทำตามขั้นตอนที่ #{product_name} จัดเตรียมไว้
 
           .row
-            .head-line.black
-              ' สั่งซื้อ / สอบถาม
-            .col-sm-10.col-sm-offset-1
-              .desc
-                ' โทร. 089-123-2683
-                br
-                ' Line ID: one122683
-                br
-                ' Facebook Inbox: 
-                a href="https://www.facebook.com/tile.leveling.system/messages" ฝากข้อความ
+            .col-sm-8.col-sm-offset-2
+              .text-center
+                = link_to 'สั่งซื้อ สอบถาม', 'sale_page.html', class: 'btn btn-success btn-lg btn-block'
+              hr
 
-      br
-      br
-      .container
-        .row
-          .col-xs-12
-            br
-            .text-center
-              .fb-page data-adapt-container-width="true" data-hide-cover="false" data-href="https://www.facebook.com/tile.leveling.system" data-show-facepile="true" data-show-posts="false" data-small-header="false" 
-                .fb-xfbml-parse-ignore
-                  blockquote cite="https://www.facebook.com/tile.leveling.system" 
-                    a href="https://www.facebook.com/tile.leveling.system" ชุดปรับระดับพื้นกระเบื้อง
+br
+br
+br
+br
 
-        br
-        br
+= link_to 'สั่งซื้อ สอบถาม', 'sale_page.html', class: 'btn btn-success contact'
+
