@@ -13,8 +13,11 @@
   .head-line
     @include center
     font-family: ThaiSansNeue
-    font-size: 50px
     font-weight: 500
+    @media only screen and (max-width:768px)
+      font-size: 37px
+    @media only screen and (min-width:768px)
+      font-size: 50px
     &.white
       color: #FFFFFF
     &.back
@@ -22,50 +25,75 @@
 
   .sub-head-line
     @include center
-    font-family: ThaiSansNeue
-    font-size: 33px
-    font-weight: 500
     color: #333
+    font-family: ThaiSansNeue
+    font-weight: 500
+    @media only screen and (max-width:768px)
+      font-size: 27px
+    @media only screen and (min-width:768px)
+      font-size: 33px
 
   .desc
+    color: #333
     font-family: boon
     font-weight: 300
-    font-size: 27px
-    color: #333
+    @media only screen and (max-width:768px)
+      font-size: 20px
+    @media only screen and (min-width:768px)
+      font-size: 27px
+    
     
   .landing__head
     @include center
-    @include at2x('landing/selling_point_bg', 'jpg')
     background-position: center
     background-repeat: no-repeat
-    min-height: 500px
-    padding: 27px
+    background-size: cover
+    min-height: 600px
+    padding: 27px 
+    @media only screen and (max-width:960px)
+      // @include at2x('landing/selling_point_bg_mobile', 'jpg')
+      background-image: image-url('landing/selling_point_bg_mobile.jpg')
+      
+
+    @media only screen and (min-width:960px)
+      // @include at2x('landing/selling_point_bg', 'jpg')
+      background-image: image-url('landing/selling_point_bg.jpg')
+
 
     #brand
       font-family: Boon
       font-weight: 300
       font-size: 23px
       color: #FFFFFF
+      text-align: left
+      img
+        height: 50px
+        width: 50px
+        margin-right: 15px 
 
     .head-line
-      margin-top: 39px
+      margin-top: 19px
 
+    #player-frame
+      margin-top: 10px
     #play-fullscreen
-      @include at2x('landing/youtube_thumbnail', 'png')
+      // @include at2x('landing/youtube_thumbnail', 'png')
+      background-image: image-url('landing/youtube_thumbnail.png')
+      background-size: cover
       background-position: center
       background-repeat: no-repeat
-      background-size: 169px auto !important
-      height: 110px
+      background-size: 370px auto !important
+      height: 151px
       display: block
-      margin: 0 auto
-      img
+      margin: 39px auto
+      img.play
         @include center
         height: 50px
         width: 50px
-        margin-top: 25px
+        margin-top: 55px
 
     #arrow-down
-      margin-top: 41px
+      margin-top: 71px
 
   .landing__problem
     margin-top: 40px
@@ -81,7 +109,9 @@
   .landing__solve
     margin-top: 80px
     @include center
-    @include at2x('landing/result_bg_1', 'png')
+    // @include at2x('landing/result_bg_1', 'png')
+    background-image: image-url('landing/result_bg_1.png')
+    background-size: cover
     background-position: center
     background-repeat: no-repeat
     min-height: 400px
@@ -109,7 +139,9 @@
   
   .landing__result
     margin-top: 57px
-    @include at2x('landing/result_bg_2', 'png')
+    // @include at2x('landing/result_bg_2', 'png')
+    background-image: image-url('landing/result_bg_2.png')
+    background-size: cover
     background-position: center
     background-repeat: no-repeat
     min-height: 303px
@@ -118,23 +150,25 @@
       @include center
 
   .landing__benefit
+    margin-top: 40px
     .row
-      margin-top: 60px
+      margin-top: 40px
+      .col-sm-4
+        margin-top: 40px
     .desc
       @include center    
 
-a.contact
-  position: fixed
-  right: 30px
-  bottom: 30px
+.btn-call-to-action
   width: 200px
   height: 50px
   padding-top: 10px
   font-family: Boon
   font-weight: 400
   font-size: 20px
-
-.btn-round
   border-radius: 25px
+  &:stick
+    position: fixed
+    right: 30px
+    bottom: 30px
 
 

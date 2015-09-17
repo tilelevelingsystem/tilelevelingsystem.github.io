@@ -5,8 +5,9 @@ html
   head
     meta[charset="utf-8"]
     meta[http-equiv="X-UA-Compatible" content="IE=edge;chrome=1"]
+    meta name="viewport" content="width=device-width, initial-scale=1"
     meta name="keywords" content="กระเบื้องราคา,การปูกระเบื้อง"
-    meta name="description" content="เครื่องมือที่ทำให้งานปูกระเบื้องออกมาอย่างมืออาชีพ"
+    meta name="description" content="เครื่องมือปรับระดับกระเบื้อง"
     title
       = page_title
     meta[name="description" content="#{page_description}"]
@@ -19,19 +20,25 @@ html
   body
     .landing
       .landing__head
-        = image_tag 'landing/logo.png'
         #brand 
+          = image_tag 'landing/logo.png'
           = product_name
+          /
+            ' &nbsp
+            ' ชุดปรับระดับพื้นกระเบื้อง
+        .row
+          .col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-5.
+            .head-line.white
+              ' เครื่องมือ
+              br
+              ' แก้ปัญหาปูกระเบื้องไม่ได้ระดับ
 
-        .head-line.white
-          ' เครื่องมือที่ทำให้
-          br
-          ' งานปูกระเบื้องออกมาอย่างมืออาชีพ
+            #player-frame style="display:none"
+              iframe#player width="560" height="315" src="https://www.youtube.com/embed/ifXXPA_zFzQ?rel=0" frameborder="0" allowfullscreen
+            a#play-fullscreen href="#"
+              = image_tag 'landing/play_video.png', class: 'play'
 
-        #player-frame style="display:none"
-          iframe#player width="560" height="315" src="https://www.youtube.com/embed/ifXXPA_zFzQ?rel=0" frameborder="0" allowfullscreen
-        a#play-fullscreen href="#"
-          = image_tag 'landing/play_video.png'
+            = link_to 'สั่งซื้อ สอบถาม', 'sale_page.html', class: 'btn btn-success btn-call-to-action'
 
         = image_tag 'landing/arrow_down.png', id: 'arrow-down'
 
@@ -41,20 +48,18 @@ html
         .container
           .row
             .col-sm-6
-              = image_tag 'landing/one_mm.png', class: 'img-responsive center-block'
+              = image_tag 'landing/one_mm.png', class: 'img-responsive center-block', style: 'padding-top: 50px'
             .col-sm-6
               .sub-head-line
-                ' 1 มิลลเมตร 
-                br
-                ' สร้างประสบการณ์ไม่ดีได้
+                ' กระเบื้องโก่ง
               .desc
-                ' กระเบื้องที่ปูแล้วมีระดับไม่เท่ากันเพียง 1 มิลลิเมตร สร้างประสบการณ์ไม่ดีให้แก่ลูกค้าของคุณ
+                ' กระเบื้องแต่ละแผ่นโก่งไม่เท่ากัน เมื่อปู กระเบื้องจึงไม่ได้ระดับเดียวกัน
           .row
             .col-sm-5
               .sub-head-line
-                ' ช่างปูกระเบื้องต้องมีความชำนาญ
+                ' ช่างไม่รอบคอบ
               .desc
-                ' การปูกระเบื้องให้ดี ต้องอาศัยผู้รับเหมาที่มีประสบการณ์ กระเบื้องทุกแผ่นที่ปูจึงจะมีระดับที่เท่ากัน
+                ' ช่างมือใหม่ขาดความรอบคอบ การปูกระเบื้องต้องอาศัยประสบการณ์ และขั้นตอนการปูที่ถูกต้อง
             .col-sm-7
               = image_tag 'landing/tile_broken.jpg', class: 'img-responsive center-block'
       
@@ -84,33 +89,51 @@ html
           ' ผลลัพธ์กระเบื้องทุกแผ่นมีระดับเดียวกัน
         .desc
           ' กระเบื้องทุกแผ่นจะถูกปรับระดับ โดยเครื่องมือ #{product_name} จึงทำให้ คุณไม่ต้องกังวลใจอีกต่อไป
+        .row
+          .col-sm-8.col-sm-offset-2
+            br
+            br
+            .text-center
+              = link_to 'สั่งซื้อ สอบถาม', 'sale_page.html', class: 'btn btn-success btn-call-to-action'
+
 
       .landing__benefit
         .container
+          .head-line.black
+            ' ชุดปรับระดับพื้นกระเบื้อง #{product_name} ช่วยคุณ
+        .container
           .row
-            .head-line.black
-              ' ลดค่าใช้จ่าย
-            .col-sm-10.col-sm-offset-1
+            .col-sm-4
+              .sub-head-line
+                ' ไม่ต้องแก้งานซ้ำ
               .desc
-                ' ชุดปรับระดับพื้นกระเบื้องของ #{product_name} ช่วยลดค่าใช้จ่าย เพราะการกลับไปแก้งาน ต้องเสียค่าใช้จ่ายสูงกว่า จึงช่วยลดความเสี่ยง และควบคุมต้นทุน
+                = image_tag 'landing/icon_reduce_cost.png', class: 'img-responsive center-block'
+                ' เมื่อใช้แล้วลดปัญหา ไม่ต้องกลับไปแก้งาน
 
-          .row
-            .head-line.black
-              ' ใช้งานง่าย แม้ปูโดยช่างมือใหม่
-            .col-sm-10.col-sm-offset-1
+            .col-sm-4
+              .sub-head-line
+                ' ลูกค้าพึงพอใจ
               .desc
-                ' ช่างมือใหม่ก็สามารถปูกระเบื้องได้เนียบดั่งช่างมืออาชีพ เพียงทำตามขั้นตอนที่ #{product_name} จัดเตรียมไว้
+                = image_tag 'landing/icon_satisfy.png', class: 'img-responsive center-block'
+                ' ลูกค้าพอใจในงานปูกระเบื้องเพราะงานออกมาดี ไม่ต้องแก้ซ้ำ
+
+            .col-sm-4
+              .sub-head-line
+                ' มือใหม่ก็ใช้ได้
+              .desc
+                = image_tag 'landing/icon_easy.png', class: 'img-responsive center-block'
+                ' ใช้งานง่ายเพียงทำตามขั้นตอนที่จัดเตรียมไว้
 
           .row
             .col-sm-8.col-sm-offset-2
               .text-center
-                = link_to 'สั่งซื้อ สอบถาม', 'sale_page.html', class: 'btn btn-success btn-lg btn-block btn-round'
+                = link_to 'สั่งซื้อ สอบถาม', 'sale_page.html', class: 'btn btn-success btn-call-to-action'
               hr
 
 br
 br
 br
 br
-
-= link_to 'สั่งซื้อ สอบถาม', 'sale_page.html', class: 'btn btn-success btn-round contact'
 = partial "partials/fb_audience"
+/ = link_to 'สั่งซื้อ สอบถาม', 'sale_page.html', class: 'btn btn-success btn-round contact'
+

@@ -107,8 +107,8 @@ activate :livereload
 # Set site setting, used in helpers / sitemap.xml / feed.xml.
 set :site_url, 'http://xn--12cm8ccgs5a0fza5eew9f7fg.net'
 set :site_author, 'PY'
-set :site_title, 'กระเบื้องปูพื้น - จำหน่ายชุดปรับพื้นกระเบื้อง'
-set :site_description, 'จำหน่ายชุดปรับพื้นกระเบื้อง'
+set :site_title, 'กระเบื้องปูพื้น - ชุดปรับพื้นกระเบื้อง'
+set :site_description, 'ชุดปรับพื้นกระเบื้อง'
 # Select the theme from bootswatch.com.
 # If false, you can get plain bootstrap style.
 # set :theme_name, 'flatly'
