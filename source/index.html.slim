@@ -47,6 +47,15 @@ html
           ' ปัญหาการปูกระเบื้อง
         .container
           .row
+            .col-sm-5
+              .sub-head-line
+                ' ช่างไม่รอบคอบ
+              .desc
+                ' ช่างมือใหม่ขาดความรอบคอบ และประสบการณ์น้อยทำให้งานออกมาไม่ดี
+            .col-sm-7
+              = image_tag 'landing/tile_broken.jpg', class: 'img-responsive center-block'
+      
+          .row
             .col-sm-6
               = image_tag 'landing/one_mm.png', class: 'img-responsive center-block', style: 'padding-top: 50px'
             .col-sm-6
@@ -54,15 +63,7 @@ html
                 ' กระเบื้องโก่ง
               .desc
                 ' กระเบื้องแต่ละแผ่นโก่งไม่เท่ากัน เมื่อปู กระเบื้องจึงไม่ได้ระดับเดียวกัน
-          .row
-            .col-sm-5
-              .sub-head-line
-                ' ช่างไม่รอบคอบ
-              .desc
-                ' ช่างมือใหม่ขาดความรอบคอบ การปูกระเบื้องต้องอาศัยประสบการณ์ และขั้นตอนการปูที่ถูกต้อง
-            .col-sm-7
-              = image_tag 'landing/tile_broken.jpg', class: 'img-responsive center-block'
-      
+          
       .landing__solve
         = image_tag 'landing/logo.png'
         #brand
