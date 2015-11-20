@@ -135,9 +135,50 @@ html
 
           .row
             .col-sm-8.col-sm-offset-2
-              .text-center
-                = link_to 'สั่งซื้อ สอบถาม', 'sale_page.html', class: 'btn btn-success btn-call-to-action'
+              /
+                .text-center
+                  = link_to 'สั่งซื้อ สอบถาม', 'sale_page.html', class: 'btn btn-success btn-call-to-action'
               hr
+
+      .landing__benefit
+        .container
+          .head-line.black
+            ' ความเห็นจากลูกค้าบางส่วนที่ใช้ Connection Tile
+        .container
+          .row
+            .col-sm-3
+              .sub-head-line
+                = image_tag 'landing/customer_1.jpg', class: 'img-responsive center-block customer-profile'
+                ' ว่าที่ร้อยตรีสุธี สกุลทอง
+              .desc
+                ' คับผม ใช้ดีมากเลย เดียวหลังต่อไปจะสั่งเพิ่ม
+            .col-sm-3
+              .sub-head-line
+                = image_tag 'landing/customer_2.jpg', class: 'img-responsive center-block customer-profile'
+                ' Papa Charlie
+              .desc
+                = image_tag 'landing/customer_feedback_1.png', class: 'img-responsive center-block'
+            .col-sm-3
+              .sub-head-line
+                = image_tag 'landing/customer_3.jpg', class: 'img-responsive center-block customer-profile'
+                ' Sittichoke Rodechanakittayakorn
+              .desc
+                ' ใช้ดี ครับ
+            .col-sm-3
+              .sub-head-line
+                = image_tag 'landing/customer_4.jpg', class: 'img-responsive center-block customer-profile'
+                ' Somsak Patoomsang
+              .desc
+                = image_tag 'landing/customer_feedback_2.png', class: 'img-responsive center-block'
+
+          .row
+            .col-sm-8.col-sm-offset-2
+              .text-center
+                  = link_to 'สั่งซื้อ สอบถาม', 'sale_page.html', class: 'btn btn-success btn-call-to-action'
+              hr
+
+
+
 
 br
 br
